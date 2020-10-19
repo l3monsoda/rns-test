@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import "modules/font-face.css";
+@import "modules/vars.css";
+@import "../../node_modules/normalize.css/normalize.css";
+@import "modules/base.css";
+@import "modules/sprite.css";
+@import "modules/grid.css";
+@import "modules/animations.css";
+
+/*componets styles*/
+
+@import "components/icon.css";
+@import "components/buttons.css";
+@import "components/links.css";
+@import "components/preloader.css";
+@import "../../node_modules/magnific-popup/dist/magnific-popup.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.less";
+@import "../../node_modules/slick-carousel/slick/slick.less";
+@import "../../node_modules/slick-lightbox/dist/slick-lightbox.css";
+
+
+/*last styles*/
+
+
+/*@import "../../node_modules/atm.css/atm.css";*/
+
+@import "project.less";
+@import "header.less";
+@import "main.less";
+@import "tabs-screen.less";
+@import "technologies.less";
+@import "projects-and-clients.less";
+@import "news-and-articles.less";
+@import "footer.less";

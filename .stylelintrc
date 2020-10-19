@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "stylelint-config-recommended"
+  ],
+  "plugins": [
+    "stylelint-no-unsupported-browser-features",
+    "stylelint-no-indistinguishable-colors"
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {
+        "severity": "warning",
+        "ignore": [
+          "css-appearance"
+        ]
+      }
+    ],
+    "selector-no-vendor-prefix": null,
+    "property-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "at-rule-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "selector-max-specificity": "0,3,1",
+    "plugin/stylelint-no-indistinguishable-colors": null,
+    "comment-whitespace-inside": null,
+    "string-quotes": "single",
+    "declaration-no-important": true,
+    "comment-empty-line-before": null
+  },
+  "ignoreFiles": [
+    "node_modules/**",
+    "build/**"
+  ]
+}

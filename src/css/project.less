@@ -1,0 +1,27 @@
+@main-side-margin: 35px;
+@main-red: #E31E24;
+@purple: #7B4CE5;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.side-margin() {
+    margin: 0 @main-side-margin;
+  }
+  
+  .row-flex() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column-flex() {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .size(@n) {
+    width: calc(100% / @n);
+  }
+  

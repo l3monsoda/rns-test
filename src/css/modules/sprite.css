@@ -1,0 +1,144 @@
+.icon-android::before {
+-webkit-mask: url(../img/sprite.svg#android) no-repeat;
+mask: url(../img/sprite.svg#android) no-repeat;
+}
+.icon-bottom-line::before {
+-webkit-mask: url(../img/sprite.svg#bottom-line) no-repeat;
+mask: url(../img/sprite.svg#bottom-line) no-repeat;
+}
+.icon-bottom-line-tabs::before {
+-webkit-mask: url(../img/sprite.svg#bottom-line-tabs) no-repeat;
+mask: url(../img/sprite.svg#bottom-line-tabs) no-repeat;
+}
+.icon-bottom-line-tabs-active::before {
+-webkit-mask: url(../img/sprite.svg#bottom-line-tabs-active) no-repeat;
+mask: url(../img/sprite.svg#bottom-line-tabs-active) no-repeat;
+}
+.icon-bottom-line-tech::before {
+-webkit-mask: url(../img/sprite.svg#bottom-line-tech) no-repeat;
+mask: url(../img/sprite.svg#bottom-line-tech) no-repeat;
+}
+.icon-btn-blue::before {
+-webkit-mask: url(../img/sprite.svg#btn-blue) no-repeat;
+mask: url(../img/sprite.svg#btn-blue) no-repeat;
+}
+.icon-btn-light-blue::before {
+-webkit-mask: url(../img/sprite.svg#btn-light-blue) no-repeat;
+mask: url(../img/sprite.svg#btn-light-blue) no-repeat;
+}
+.icon-button-hover::before {
+-webkit-mask: url(../img/sprite.svg#button-hover) no-repeat;
+mask: url(../img/sprite.svg#button-hover) no-repeat;
+}
+.icon-button-stroke::before {
+-webkit-mask: url(../img/sprite.svg#button-stroke) no-repeat;
+mask: url(../img/sprite.svg#button-stroke) no-repeat;
+}
+.icon-case::before {
+-webkit-mask: url(../img/sprite.svg#case) no-repeat;
+mask: url(../img/sprite.svg#case) no-repeat;
+}
+.icon-class::before {
+-webkit-mask: url(../img/sprite.svg#class) no-repeat;
+mask: url(../img/sprite.svg#class) no-repeat;
+}
+.icon-connect::before {
+-webkit-mask: url(../img/sprite.svg#connect) no-repeat;
+mask: url(../img/sprite.svg#connect) no-repeat;
+}
+.icon-css3::before {
+-webkit-mask: url(../img/sprite.svg#css3) no-repeat;
+mask: url(../img/sprite.svg#css3) no-repeat;
+}
+.icon-envelope::before {
+-webkit-mask: url(../img/sprite.svg#envelope) no-repeat;
+mask: url(../img/sprite.svg#envelope) no-repeat;
+}
+.icon-envelope-dot::before {
+-webkit-mask: url(../img/sprite.svg#envelope-dot) no-repeat;
+mask: url(../img/sprite.svg#envelope-dot) no-repeat;
+}
+.icon-facebook::before {
+-webkit-mask: url(../img/sprite.svg#facebook) no-repeat;
+mask: url(../img/sprite.svg#facebook) no-repeat;
+}
+.icon-hamburger::before {
+-webkit-mask: url(../img/sprite.svg#hamburger) no-repeat;
+mask: url(../img/sprite.svg#hamburger) no-repeat;
+}
+.icon-html5::before {
+-webkit-mask: url(../img/sprite.svg#html5) no-repeat;
+mask: url(../img/sprite.svg#html5) no-repeat;
+}
+.icon-instagram::before {
+-webkit-mask: url(../img/sprite.svg#instagram) no-repeat;
+mask: url(../img/sprite.svg#instagram) no-repeat;
+}
+.icon-linkedin::before {
+-webkit-mask: url(../img/sprite.svg#linkedin) no-repeat;
+mask: url(../img/sprite.svg#linkedin) no-repeat;
+}
+.icon-linux::before {
+-webkit-mask: url(../img/sprite.svg#linux) no-repeat;
+mask: url(../img/sprite.svg#linux) no-repeat;
+}
+.icon-logo::before {
+-webkit-mask: url(../img/sprite.svg#logo) no-repeat;
+mask: url(../img/sprite.svg#logo) no-repeat;
+}
+.icon-magnifying-glass::before {
+-webkit-mask: url(../img/sprite.svg#magnifying-glass) no-repeat;
+mask: url(../img/sprite.svg#magnifying-glass) no-repeat;
+}
+.icon-map-marker::before {
+-webkit-mask: url(../img/sprite.svg#map-marker) no-repeat;
+mask: url(../img/sprite.svg#map-marker) no-repeat;
+}
+.icon-mysql::before {
+-webkit-mask: url(../img/sprite.svg#mysql) no-repeat;
+mask: url(../img/sprite.svg#mysql) no-repeat;
+}
+.icon-nginx::before {
+-webkit-mask: url(../img/sprite.svg#nginx) no-repeat;
+mask: url(../img/sprite.svg#nginx) no-repeat;
+}
+.icon-phone::before {
+-webkit-mask: url(../img/sprite.svg#phone) no-repeat;
+mask: url(../img/sprite.svg#phone) no-repeat;
+}
+.icon-php::before {
+-webkit-mask: url(../img/sprite.svg#php) no-repeat;
+mask: url(../img/sprite.svg#php) no-repeat;
+}
+.icon-substrate::before {
+-webkit-mask: url(../img/sprite.svg#substrate) no-repeat;
+mask: url(../img/sprite.svg#substrate) no-repeat;
+}
+.icon-tab-content-bubble::before {
+-webkit-mask: url(../img/sprite.svg#tab-content-bubble) no-repeat;
+mask: url(../img/sprite.svg#tab-content-bubble) no-repeat;
+}
+.icon-tab-content-bubble-hover::before {
+-webkit-mask: url(../img/sprite.svg#tab-content-bubble-hover) no-repeat;
+mask: url(../img/sprite.svg#tab-content-bubble-hover) no-repeat;
+}
+.icon-users::before {
+-webkit-mask: url(../img/sprite.svg#users) no-repeat;
+mask: url(../img/sprite.svg#users) no-repeat;
+}
+.icon-vk::before {
+-webkit-mask: url(../img/sprite.svg#vk) no-repeat;
+mask: url(../img/sprite.svg#vk) no-repeat;
+}
+.icon-wifi::before {
+-webkit-mask: url(../img/sprite.svg#wifi) no-repeat;
+mask: url(../img/sprite.svg#wifi) no-repeat;
+}
+.icon-windows::before {
+-webkit-mask: url(../img/sprite.svg#windows) no-repeat;
+mask: url(../img/sprite.svg#windows) no-repeat;
+}
+.icon-youtube::before {
+-webkit-mask: url(../img/sprite.svg#youtube) no-repeat;
+mask: url(../img/sprite.svg#youtube) no-repeat;
+}

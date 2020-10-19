@@ -1,0 +1,96 @@
+{
+    "name": "projectname",
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ],
+        "plugins": [
+            [
+                "@babel/plugin-transform-modules-commonjs",
+                {
+                    "lazy": true
+                }
+            ]
+        ]
+    },
+    "overrides": {
+        "jquery": {
+            "main": "dist/jquery.min.js"
+        },
+        "photoswipe": {
+            "main": [
+                "dist/default-skin/default-skin.css",
+                "dist/default-skin/default-skin.png",
+                "dist/default-skin/default-skin.svg",
+                "dist/default-skin/preloader.gif"
+            ]
+        }
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+        "@babel/preset-env": "^7.11.5",
+        "@babel/register": "^7.11.5",
+        "@typescript-eslint/eslint-plugin": "^2.34.0",
+        "@typescript-eslint/parser": "^2.34.0",
+        "babel-loader": "^8.1.0",
+        "browser-sync": "^2.26.12",
+        "cross-env": "^7.0.2",
+        "del": "^5.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-compat": "^3.8.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "gulp": "^4.0.2",
+        "gulp-cached": "^1.1.1",
+        "gulp-debug": "^4.0.0",
+        "gulp-favicons": "^2.4.0",
+        "gulp-file-include": "^2.2.2",
+        "gulp-flatten": "^0.4.0",
+        "gulp-html-minifier2": "^1.1.11",
+        "gulp-if": "^3.0.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-less": "^4.0.1",
+        "gulp-newer": "^1.4.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-purgecss": "^2.3.0",
+        "gulp-remember": "^1.0.1",
+        "gulp-svg-sprite": "^1.5.0",
+        "gulp-typescript": "^5.0.1",
+        "gulp-uglify-es": "^2.0.0",
+        "gulp-w3c-html-validator": "^2.0.1",
+        "gulp-webp": "^4.0.1",
+        "lodash": "^4.17.20",
+        "npmfiles": "^0.1.3",
+        "postcss-csso": "^4.0.0",
+        "postcss-import": "^12.0.1",
+        "postcss-normalize": "^8.0.1",
+        "postcss-preset-env": "^6.7.0",
+        "stylelint": "^13.7.0",
+        "stylelint-config-recommended": "^3.0.0",
+        "stylelint-no-indistinguishable-colors": "^1.3.0",
+        "stylelint-no-unsupported-browser-features": "^4.0.0",
+        "tailwindcss": "^1.8.6",
+        "ts-node": "^8.10.2",
+        "tsconfig-paths": "^3.9.0",
+        "typescript": "^3.9.7",
+        "webpack": "^4.42.0",
+        "webpack-stream": "^5.2.1"
+    },
+    "scripts": {
+        "production-build": "cross-env NODE_ENV=production gulp clean build faviconsGenerator --series",
+        "browserslist": "npx browserslist",
+        "tailwindcss": "npx tailwind build node_modules/tailwindcss/utilities.css -o src/css/modules/tailwind.css --no-autoprefixer"
+    },
+    "dependencies": {
+        "dropzone": "^5.7.2",
+        "i": "^0.3.6",
+        "jquery": "^3.5.1",
+        "magnific-popup": "^1.1.0",
+        "slick-carousel": "^1.8.1",
+        "slick-lightbox": "^0.2.12",
+        "zurb-twentytwenty": "^0.1.1"
+    }
+}

@@ -1,0 +1,217 @@
+.news-and-articles {
+    padding-left: @main-side-margin;
+    padding-right: @main-side-margin;
+    padding-bottom: 70px;
+    background-color: #F3FAFF;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 1fr 1fr 420px;
+    gap: 20px 20px;
+    grid-template-areas:
+      "bubble-1 bubble-1 bubble-5"
+      "bubble-1 bubble-1 bubble-6"
+      "bubble-2 bubble-3 bubble-4";
+}
+
+.news-and-articles-header {
+    background-color: #F3FAFF;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 35px;
+    font-size: 42px;
+    padding-left: @main-side-margin;
+
+}
+
+.bubble-block {
+    background-color: white;
+    width: 100%;
+    padding: 25px 35px;
+    border-radius: 65px;
+    display: grid;
+    box-shadow: 0 5px 32px 7px rgba(79, 79, 79, 0.1);
+
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 40px auto auto;
+    grid-template-areas:
+      "date tag"
+      "header header"
+      "text text";
+    
+      transition: all ease .5s;
+
+      &:hover {
+        box-shadow: 0 5px 32px 7px rgba(108, 3, 194, 0.4);
+        transition: all ease .3s;
+
+      }
+
+
+    .bubble-date {
+        grid-area: date;
+        align-self: end;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        color: #7B4CE5;
+    }
+
+    .bubble-header {
+        grid-area: header;
+        align-self: center;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .bubble-tag {
+        height: 40px;
+        grid-area: tag;
+        justify-self: end;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        color: white;
+        padding: 10px 40px;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-image: url('../img/tag.png');
+        
+        &:hover {
+            background-image: url('../img/tag-hover.png');
+        }
+    }
+
+    .bubble-text {
+        grid-area: text;
+        align-self: start;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #656565;
+        width: 300px;
+    }
+}
+.bubble-block-1 {
+    background-color: #1F2845;
+        // background-image: url('../img/purple-bubble.png');
+    grid-area: bubble-1;
+    box-shadow: 0 5px 32px 7px rgba(79, 79, 79, 0.1);
+
+//    height: 560px;
+
+
+//    &:after {
+//        content: url('../img/purple-bubble.png');
+//    }
+
+    .bubble-date,
+    .bubble-header,
+    .bubble-text {
+        color: white;
+    }
+
+    .bubble-text {
+        width: 100%;
+    }
+
+    .bubble-header {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.bubble-block-2 {
+    grid-area: bubble-2;
+    // background-image: url('../img/big-bubble.png');
+
+}
+.bubble-block-3 {
+    grid-area: bubble-3;
+    // background-image: url('../img/big-bubble.png');
+}
+.bubble-block-4 {
+    grid-area: bubble-4;
+    // background-image: url('../img/big-bubble.png');
+
+}
+.bubble-block-5 {
+    grid-area: bubble-5;
+    // background-image: url('../img/lil-bubble.png');
+}
+
+.bubble-block-6 {
+    grid-area: bubble-6;
+    // background-image: url('../img/lil-bubble.png');
+}
+
+@media (max-width: 1230px) {
+    .news-and-articles {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 150px;
+        grid-template-areas:
+          "bubble-1 bubble-1"
+          "bubble-2 bubble-3"
+          "bubble-4 bubble-5"
+          "bubble-4 bubble-6";
+    }
+
+    .bubble-text {
+        line-height: 25px!important;
+    }
+
+    .bubble-header {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+@media (max-width: 830px) {
+    .news-and-articles-header {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .news-and-articles {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "bubble-1 bubble-2"
+          "bubble-3 bubble-4"
+          "bubble-5 bubble-6";
+    }
+
+    .bubble-text {
+        display: none;
+    }
+
+    .bubble-block {
+        width: 320px;
+    }
+}
+
+@media (max-width: 730px) {
+    .news-and-articles {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "bubble-1"
+          "bubble-2"
+          "bubble-3"
+          "bubble-4"
+          "bubble-5"
+          "bubble-6";
+    }
+
+    .bubble-block {
+        width: 100%;
+    }
+
+}

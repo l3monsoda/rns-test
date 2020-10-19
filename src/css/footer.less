@@ -1,0 +1,307 @@
+.footer {
+  background-color: #F3FAFF;
+}
+
+.footer-top {
+
+  &:first-child {
+    margin-left: @main-side-margin;
+  }
+
+  address {
+    margin-right: @main-side-margin;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "company competence carier services last-block contacts";
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #666666;
+      }
+    }
+  }
+}
+
+.company {
+  grid-area: company;
+}
+
+.competence {
+  grid-area: competence;
+}
+
+.carier {
+  grid-area: carier;
+}
+
+.services {
+  grid-area: services;
+}
+
+
+.footer-block-header {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+
+}
+
+.footer-last-block {
+  grid-area: last-block;
+  margin-top: 0;
+
+  a {
+    color: black !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+}
+
+.footer-contacts-block {
+  grid-area: contacts;
+  line-height: 28px;
+  .column-flex();
+  align-items: flex-end;
+  margin-right: @main-side-margin;
+}
+
+.social-block {
+  .row-flex();
+  width: 200px;
+  margin-right: -35px;
+
+  svg {
+    @s: 20px;
+    width: @s;
+    height: @s;
+    fill: white;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+}
+
+.instagram {
+  background-color: #7C0A65;
+}
+
+.linkedin {
+  background-color: #51C551;
+}
+
+.class {
+  background-color: #F0A20A;
+}
+
+.youtube {
+  background-color: #E31E24;
+}
+
+.facebook {
+  background-color: #2A289B;
+}
+
+.vk {
+  background-color: #28619B;
+}
+
+.phone-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.email {
+  font-size: 14px;
+  font-weight: 600;
+  color: #D7354D;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.telegram {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  font-style: normal;
+ width: 150px;
+
+  a {
+    font-weight: 600;
+    color: #D7354D;
+    font-style: normal;
+    text-decoration: none;
+  }
+}
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo copy terms button";
+}
+
+.footer-logo {
+  margin-left: @main-side-margin;
+  grid-area: logo;
+  align-self: center;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  grid-area: copy;
+  align-self: center;
+
+}
+
+.terms-of-use {
+  grid-area: terms;
+  .column-flex();
+  align-self: center;
+
+  a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.call-request {
+  grid-area: button;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  // padding: 20px 80px;
+  width: 314px;
+  height: 65px;
+  justify-self: end;
+  margin-right: @main-side-margin;
+  background-image: url('../img/button.png');
+
+  &:hover {
+    background-image: url('../img/button-hover.png');
+  }
+}
+
+@media (max-width: 1110px) {
+  .footer-block-list {
+    display: none;
+  }
+
+  .footer-block-header {
+      cursor: pointer;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "company    last-block contacts"
+      "competence last-block contacts"
+      "carier last-block contacts"
+      "services last-block contacts";
+  }
+
+  .footer-last-block {
+
+    li {
+      margin-bottom: 40px !important;
+
+    }
+  }
+}
+
+@media (max-width: 1078px) {
+
+  .footer-bottom {
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo copy terms"
+      ". button .";
+  }
+
+  .call-request {
+    justify-self: center;
+    margin-right: 0;
+  }
+
+  .copyright {
+    justify-self: center;
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    row-gap: 20px;
+    grid-template-areas:
+      "button"
+      "terms"
+      "copy"
+      "logo";
+  }
+
+  .terms-of-use {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "company    last-block"
+          "competence last-block"
+          "carier last-block"
+          "services last-block"
+          "contacts contacts";
+      }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+
+    .footer-contacts-block {
+        align-items: center;
+    }
+
+    .social-block {
+        width: auto;
+    }
+
+
+}

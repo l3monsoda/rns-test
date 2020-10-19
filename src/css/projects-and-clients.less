@@ -1,0 +1,194 @@
+.projects-and-clients {
+    background-color: #F3FAFF;
+    padding-top: 50px;
+}
+
+.pac-tabs {
+    .row-flex();
+    justify-content: space-around;
+    padding: 0 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+    div {
+        font-size: 42px;
+        font-weight: 600;
+        color: black;
+        position: relative;
+
+        &:after {
+            content: url('../img/black-bottom.png');
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+    }
+}
+
+
+
+.project-content {
+    background-image: url("../img/substrate.png");
+    height: 840px;
+    width: 1177px;
+    margin: 0 auto;
+    .row-flex();
+    justify-content: center;
+    align-items: center;
+}
+
+.project-view {
+    img {
+        width: 320px;
+        margin-right: 50px;
+    }
+}
+
+.project-description {
+    width: 50%;
+}
+
+.project-description-icons-block {
+
+    .row-flex();
+    margin-left: -20px;
+
+    div {
+        margin-left: 20px;
+    }
+
+    svg {
+        @s: 40px;
+        width: @s;
+        height: @s;
+    }
+}
+
+.project-desc-list {
+    padding-left: 15px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.project-desc-header {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.project-desc-customer,
+.project-desc-text {
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+.project-desc-customer {
+    margin-bottom: 20px;
+}
+
+.project-desc-more-button {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+   padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 5;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        z-index: 5;
+
+    }
+
+    &:after {
+        content: url('../img/more-button.png');
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+        &:after {
+            content: url('../img/more-button-hover.png');
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .project-content {
+        background-image: unset;
+        background-color: white;
+        border-radius: 20%;
+        box-shadow: 0 5px 32px 7px rgba(79, 79, 79, 0.1);
+        width: auto;
+        margin: 0 @main-side-margin;
+    }
+
+    .project-desc-header {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .project-desc-text {
+        line-height: 25px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .pac-tabs {
+        margin-bottom: 20px;
+    }
+
+    .project-tab {
+        font-size: 26px !important;
+        &:after {
+            content: ""!important;
+        }
+    }
+
+    .news-and-articles-header {
+        padding-top: 30px!important;
+    }
+
+    .clients-tab {
+        display: none;
+    }
+
+    .project-content {
+        background-color: unset;
+        box-shadow: unset;
+        height: auto;
+    }
+
+    .project-view {
+        display: none;
+    }
+
+    .project-desc-header {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .project-desc-customer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .project-desc-more-button {
+    }
+}

@@ -1,0 +1,185 @@
+.inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.icon::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  flex-shrink: 0;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: currentColor;
+}
+
+.icon-margin-right-xs::before {
+  margin-right: .2em;
+}
+
+.icon-margin-right-sm::before {
+  margin-right: .4em;
+}
+
+.icon-margin-right-md::before {
+  margin-right: .6em;
+}
+
+.icon-margin-right-lg::before {
+  margin-right: .8em;
+}
+
+.icon-margin-right-xl::before {
+  margin-right: 1em;
+}
+
+.icon-margin-left-xs::before {
+  margin-left: .2em;
+}
+
+.icon-margin-left-sm::before {
+  margin-left: .4em;
+}
+
+.icon-margin-left-md::before {
+  margin-left: .6em;
+}
+
+.icon-margin-left-lg::before {
+  margin-left: .8em;
+}
+
+.icon-margin-left-xl::before {
+  margin-left: 1em;
+}
+
+.icon-margin-top-xs::before {
+  margin-top: .2em;
+}
+
+.icon-margin-top-sm::before {
+  margin-top: .4em;
+}
+
+.icon-margin-top-md::before {
+  margin-top: .6em;
+}
+
+.icon-margin-top-lg::before {
+  margin-top: .8em;
+}
+
+.icon-margin-top-xl::before {
+  margin-top: 1em;
+}
+
+.icon-margin-bottom-xs::before {
+  margin-bottom: .2em;
+}
+
+.icon-margin-bottom-sm::before {
+  margin-bottom: .4em;
+}
+
+.icon-margin-bottom-md::before {
+  margin-bottom: .6em;
+}
+
+.icon-margin-bottom-lg::before {
+  margin-bottom: .8em;
+}
+
+.icon-margin-bottom-xl::before {
+  margin-bottom: 1em;
+}
+
+.icon-order-last::before {
+  order: 1;
+}
+
+.icon-size-xs::before {
+  font-size: 1.1em;
+}
+
+.icon-size-sm::before {
+  font-size: 1.2em;
+}
+
+.icon-size-md::before {
+  font-size: 1.4em;
+}
+
+.icon-size-lg::before {
+  font-size: 1.6em;
+}
+
+.icon-size-xl::before {
+  font-size: 1.8em;
+}
+
+.icon-size-2xl::before {
+  font-size: 2em;
+}
+
+.icon-size-3xl::before {
+  font-size: 3em;
+}
+
+.icon-size-4xl::before {
+  font-size: 4em;
+}
+
+.icon-size-5xl::before {
+  font-size: 5em;
+}
+
+.icon-color-primary::before {
+  background-color: var(--primary);
+}
+
+.icon-color-secondary::before {
+  background-color: var(--secondary);
+}
+
+.icon-color-accent::before {
+  background-color: var(--accent);
+}
+
+.icon-color-error::before {
+  background-color: var(--error);
+}
+
+.icon-color-info::before {
+  background-color: var(--info);
+}
+
+.icon-color-success::before {
+  background-color: var(--success);
+}
+
+.icon-color-warning::before {
+  background-color: var(--warning);
+}
+
+.icon-color-white::before {
+  background-color: var(--white);
+}
+
+.icon-color-black::before {
+  background-color: var(--black);
+}
+
+.icon-color-light-gray::before {
+  background-color: var(--light-gray);
+}

@@ -1,0 +1,52 @@
+:root {
+  --primary: #2957A5;
+  --secondary: #25363C;
+  --accent: #F57F17;
+  --error: #FF5722;
+  --info: #607D8B;
+  --success: #4CAF50;
+  --warning: #FFC107;
+  --white: #FFFFFF;
+  --black: #212121;
+
+  --gray-color-0: #FAFAFA;
+  --gray-color-1: #F5F5F5;
+  --gray-color-2: #EEEEEE;
+  --gray-color-3: #EEEEEE;
+  --gray-color-4: #E0E0E0;
+  --gray-color-5: #BDBDBD;
+  --gray-color-6: #9E9E9E;
+  --gray-color-7: #757575;
+  --gray-color-8: #616161;
+  --gray-color-9: #424242;
+
+  --root-fontsize: 16rem;
+  --font-family-system: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --gap: 1rem;
+  --max-width-container: 1240px;
+  --min-width-container: 320px;
+}
+
+@custom-media --xs-only (max-width: 600px);
+
+@custom-media --xs (min-width: 0);
+
+@custom-media --sm-only (min-width: 600px) and (max-width: 900px);
+
+@custom-media --sm-and-down (max-width: 900px);
+
+@custom-media --sm (min-width: 600px);
+
+@custom-media --md-only (min-width: 900px) and (max-width: 1200px);
+
+@custom-media --md-and-down (max-width: 1200px);
+
+@custom-media --md (min-width: 900px);
+
+@custom-media --lg-only (min-width: 1200px) and (max-width: 1800px);
+
+@custom-media --lg-and-down (max-width: 1800px);
+
+@custom-media --lg (min-width: 1200px);
+
+@custom-media --xl (min-width: 1800px);
