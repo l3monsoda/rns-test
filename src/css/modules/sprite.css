@@ -26,6 +26,14 @@ mask: url(../img/sprite.svg#btn-blue) no-repeat;
 -webkit-mask: url(../img/sprite.svg#btn-light-blue) no-repeat;
 mask: url(../img/sprite.svg#btn-light-blue) no-repeat;
 }
+.icon-btn-transparent-hover::before {
+-webkit-mask: url(../img/sprite.svg#btn-transparent-hover) no-repeat;
+mask: url(../img/sprite.svg#btn-transparent-hover) no-repeat;
+}
+.icon-btn-violet::before {
+-webkit-mask: url(../img/sprite.svg#btn-violet) no-repeat;
+mask: url(../img/sprite.svg#btn-violet) no-repeat;
+}
 .icon-button-hover::before {
 -webkit-mask: url(../img/sprite.svg#button-hover) no-repeat;
 mask: url(../img/sprite.svg#button-hover) no-repeat;
