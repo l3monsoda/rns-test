@@ -1,13 +1,19 @@
 .projects-and-clients {
     background-color: #F3FAFF;
     padding-top: 50px;
+    .column-flex();
+    align-items: center;
+
 }
 
 .pac-tabs {
-    .row-flex();
-    justify-content: space-around;
-    padding: 0 200px;
     margin-bottom: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "project client";
     cursor: pointer;
 
     div {
@@ -25,27 +31,96 @@
     }
 }
 
+.project-tab{
+    grid-area: project;
+    place-self: center center;
+    margin-left: @main-side-margin;
+}
 
+.clients-tab {
+    grid-area: client;
+    place-self: center center;
+    margin-right: @main-side-margin;
+}
+
+.pac-content {
+    height: 840px;
+    width: 1177px;
+}
 
 .project-content {
     background-image: url("../img/substrate.png");
     height: 840px;
-    width: 1177px;
-    margin: 0 auto;
-    .row-flex();
-    justify-content: center;
-    align-items: center;
+    width: 1177px!important;
+    // margin: 0 auto;
+    // .row-flex();
+    // justify-content: center;
+    // align-items: center;
+    display: grid!important;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "view desc";
+}
+
+// Arrow margin
+@am: 5px;
+
+.gallery-arrow.mod-prev {
+//   left: @am;
+  //border-radius: 0 4px 4px 0;
+}
+
+.gallery-arrow.mod-next {
+//   right: @am;
+  //border-radius: 4px 0 0 4px;
+}
+
+.mod-next,
+.mod-prev {
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+
+  &:hover {
+      color: grey;
+  }
+}
+
+.mod-next {
+    top: 50%;
+    right: -55px;
+}
+
+.mod-prev {
+    top: 50%;
+    left: -55px;
 }
 
 .project-view {
-    img {
-        width: 320px;
-        margin-right: 50px;
-    }
+    width: 350px;
+    margin-left: 100px;
+    grid-area: view;
+    place-self: center center;
+}
+
+.slick-dots li button:before{
+    font-size: 60px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #E31E24 !important;
 }
 
 .project-description {
-    width: 50%;
+    width: 450px;
+    grid-area: desc;
+    place-self: center start;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .project-description-icons-block {
@@ -118,6 +193,13 @@
         &:after {
             content: url('../img/more-button-hover.png');
         }
+    }
+}
+
+@media (max-width: 1360px) {
+    .pac-content {
+        height: 750px;
+        width: 900px;
     }
 }
 

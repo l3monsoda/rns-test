@@ -2,6 +2,14 @@
 -webkit-mask: url(../img/sprite.svg#android) no-repeat;
 mask: url(../img/sprite.svg#android) no-repeat;
 }
+.icon-arr-left::before {
+-webkit-mask: url(../img/sprite.svg#arr-left) no-repeat;
+mask: url(../img/sprite.svg#arr-left) no-repeat;
+}
+.icon-arr-right::before {
+-webkit-mask: url(../img/sprite.svg#arr-right) no-repeat;
+mask: url(../img/sprite.svg#arr-right) no-repeat;
+}
 .icon-bottom-line::before {
 -webkit-mask: url(../img/sprite.svg#bottom-line) no-repeat;
 mask: url(../img/sprite.svg#bottom-line) no-repeat;

@@ -83,6 +83,8 @@
   .row-flex();
   width: 200px;
   margin-right: -35px;
+  cursor: pointer;
+
 
   svg {
     @s: 20px;
@@ -99,6 +101,9 @@
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -147,7 +152,7 @@
   font-weight: 600;
   color: black;
   font-style: normal;
- width: 150px;
+  width: 150px;
 
   a {
     font-weight: 600;
@@ -211,13 +216,24 @@
   }
 }
 
+.footer-block-list-mobile {
+  li {
+    margin-bottom: 10px!important;
+  }
+}
+
+
 @media (max-width: 1110px) {
   .footer-block-list {
     display: none;
   }
 
+  .footer-block-list-mobile {
+    margin-top: 0;
+  }
+
   .footer-block-header {
-      cursor: pointer;
+    cursor: pointer;
   }
 
   .footer-top {
@@ -280,28 +296,28 @@
 }
 
 @media (max-width: 600px) {
-    .footer-top {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-          "company    last-block"
-          "competence last-block"
-          "carier last-block"
-          "services last-block"
-          "contacts contacts";
-      }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "company    last-block"
+      "competence last-block"
+      "carier last-block"
+      "services last-block"
+      "contacts contacts";
+  }
 
-    .footer-bottom {
-        margin-top: 20px;
-    }
+  .footer-bottom {
+    margin-top: 20px;
+  }
 
-    .footer-contacts-block {
-        align-items: center;
-    }
+  .footer-contacts-block {
+    align-items: center;
+  }
 
-    .social-block {
-        width: auto;
-    }
+  .social-block {
+    width: auto;
+  }
 
 
 }
