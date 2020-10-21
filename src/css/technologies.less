@@ -43,10 +43,21 @@
 
 .tech-content {
     grid-area: content;
-    .column-flex();
-    justify-content: space-evenly;
-    align-content: space-around;
+    // .column-flex();
+    // justify-content: space-evenly;
+    // align-content: space-around;
     // background-color: rgba(0,0,0,0.3);   
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "row-1"
+    "row-2"
+    "row-3"
+    "row-4"
+    "row-5";
+
     border-radius: 20%;
     margin-bottom: 30px;
     margin-right: @main-side-margin;
@@ -65,11 +76,12 @@
 
 .tech-list-item {
     position: relative;
+
     &:after {
         content: url('../img/sprite.svg#bottom-line-tech');
         position: absolute;
         left: 0;
-        bottom: -140px;
+        bottom: -200px;
         width: 380px;
     }
 
@@ -87,13 +99,20 @@
 
 .content-row-header {
     color: white;
+    place-self: center center;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     grid-area: header;
 }
 
+.content-row-header,
 .content-row-subtext {
+    margin-left: 50px;
+}
+
+.content-row-subtext {
+    place-self: center center;
     color: #82CAFF;
     font-size: 16px;
     font-weight: 700;
@@ -143,7 +162,7 @@
     }
 
     .tech-list {
-        width: 300px;
+        // width: 300px;
     }
 
     .technologies-screen ul li {
@@ -151,7 +170,7 @@
    
         &:after {
             width: 250px;
-            top: -50px;
+            top: -80px;
         }
     }
 
@@ -171,7 +190,6 @@
 
 @media (max-width: 1358px) {
     .tech-content-row {
-        row-gap: 20px;
         column-gap: 20px;
         margin-right: -120px;
     }

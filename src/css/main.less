@@ -63,12 +63,12 @@ main>button {
     z-index: 100;
     // background-image: url('../img/sprite.svg#btn-transparent-hover');
 
-    @offset: -60px;
+   @btn-offset: -95px;
 
     &:after {
       content: url('../img/sprite.svg#button-stroke');
       position: absolute;
-      top: @offset;
+      top: @btn-offset;
       left: 0;
       width: 100%;
       fill: white;
@@ -79,7 +79,7 @@ main>button {
       &:after {
         content: url('../img/sprite.svg#button-hover');
         position: absolute;
-        top: @offset;
+        top: @btn-offset;
         left: 0;
         width: 100%;
         z-index: -1;

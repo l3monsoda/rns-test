@@ -5,25 +5,27 @@ header {
   justify-content: space-between;
   align-items: center;
   display: grid;
-  grid-template-columns: 40px 80px auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: 80px;
-  grid-template-areas: 
-  "hamburger logo nav icons";
+  grid-template-areas:
+    "hamburger logo nav icons";
 }
 
 .hamburger {
   grid-area: hamburger;
-  fill: white;
-  height: 22px;
-  width: 33px;
   cursor: pointer;
   margin-left: @main-side-margin;
+
+  svg {
+    fill: white;
+    height: 30px;
+    width: 40px;
+  }
 }
 
 .logo {
   grid-area: logo;
-  width: 165px;
-  height: 59px;
+
 }
 
 .menu-list {
@@ -66,13 +68,13 @@ header {
 }
 
 .magnifying-glass svg {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 }
 
 .envelope svg {
-  width: 19px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
 }
 
 .menu-list>ul {
@@ -85,7 +87,7 @@ header {
 }
 
 .icons-block>li {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .icons-block {
@@ -99,8 +101,8 @@ header {
 
   .header {
     grid-template-columns: 150px 1fr 1fr;
-    grid-template-areas:  
-    "hamburger logo icons";
+    grid-template-areas:
+      "hamburger logo icons";
   }
 
   .logo {
@@ -109,5 +111,16 @@ header {
 
   .icons-block {
     justify-self: end;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    grid-template-columns: auto 200px auto;
+  }
+
+  .logo {
+    margin-left: -70px;
+    padding-left: 20px;
   }
 }
