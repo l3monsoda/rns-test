@@ -12,6 +12,7 @@ window.onload = function() {
   })
 
   $('.pac-content').slick({
+    draggable: false,
     prevArrow: '    <svg class="gallery-arrow mod-prev">\n' +
     '      <use xlink:href="/assets/img/sprite.svg#arr-left"></use>\n' +
     '    </svg>',
@@ -20,4 +21,12 @@ window.onload = function() {
     '    </svg>',
   })
 
-}
+    $('.tech-list-item').on('click', function() {
+      $(this).next().slideToggle()
+    })
+
+    $('.tab-item').on('click', function() {
+      $(this).next().slideToggle()
+    })
+
+  }

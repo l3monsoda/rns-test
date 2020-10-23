@@ -1,6 +1,6 @@
 .projects-and-clients {
     background-color: #F3FAFF;
-    padding-top: 50px;
+    padding: 50px;
     .column-flex();
     align-items: center;
 
@@ -116,7 +116,7 @@
 }
 
 .project-description {
-    width: 450px;
+    width: 80%;
     grid-area: desc;
     place-self: center start;
     margin-left: 50px;
@@ -196,10 +196,8 @@
     }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1300px) {
     .pac-content {
-        height: 750px;
-        width: 900px;
     }
 }
 
@@ -209,7 +207,7 @@
         background-color: white;
         border-radius: 20%;
         box-shadow: 0 5px 32px 7px rgba(79, 79, 79, 0.1);
-        width: auto;
+        width: auto!important;
         margin: 0 @main-side-margin;
     }
 
