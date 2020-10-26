@@ -138,6 +138,14 @@ mask: url(../img/sprite.svg#tab-content-bubble) no-repeat;
 -webkit-mask: url(../img/sprite.svg#tab-content-bubble-hover) no-repeat;
 mask: url(../img/sprite.svg#tab-content-bubble-hover) no-repeat;
 }
+.icon-times::before {
+-webkit-mask: url(../img/sprite.svg#times) no-repeat;
+mask: url(../img/sprite.svg#times) no-repeat;
+}
+.icon-twirl::before {
+-webkit-mask: url(../img/sprite.svg#twirl) no-repeat;
+mask: url(../img/sprite.svg#twirl) no-repeat;
+}
 .icon-users::before {
 -webkit-mask: url(../img/sprite.svg#users) no-repeat;
 mask: url(../img/sprite.svg#users) no-repeat;
